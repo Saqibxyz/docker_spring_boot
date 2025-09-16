@@ -8,7 +8,7 @@
 #### your docker file
 ```
 FROM openjdk:8-jdk-alpine
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=target/your_jar_file_name.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
 ```
