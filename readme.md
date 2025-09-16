@@ -105,3 +105,56 @@ docker compose up -d
 
 ```
 ... Learn other compose commands yourself...
+
+
+# Kubernates
+#### start minikube
+```
+minikube start
+```
+#### Point Docker CLI to Minikube’s Docker
+```
+& minikube -p minikube docker-env | Invoke-Expression
+
+```
+#### Build your Docker image inside Minikube
+##### Go to your project folder (where Dockerfile is) and run:
+```
+docker build -t image_name:x.y.z .
+
+```
+#### Apply your Kubernetes YAMLs
+##### image: my-edited-image:1.2.0
+##### imagePullPolicy: Never
+#### location for yaml files
+
+spring-boot-project/
+├── src/
+├── pom.xml
+├── Dockerfile
+├── k8s/
+│   ├── deployment.yaml
+│   └── service.yaml
+
+
+
+
+```
+kubectl apply -f k8s/
+
+```
+#### to delete pods
+```
+kubectl delete pod -l app=my-app
+
+```
+#### verify running pods
+```
+kubectl get pods
+
+```
+#### Access your Spring boot app
+```
+minikube service my-app-service
+
+```
