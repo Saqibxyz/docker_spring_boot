@@ -128,7 +128,7 @@ docker build -t image_name:x.y.z .
 ##### imagePullPolicy: Never
 #### location for yaml files
 
-spring-boot-project/
+```spring-boot-project/
 ├── src/
 ├── pom.xml
 ├── Dockerfile
@@ -137,7 +137,7 @@ spring-boot-project/
 │   └── service.yaml
 
 
-
+```
 
 ```
 kubectl apply -f k8s/
