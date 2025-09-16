@@ -1,0 +1,3 @@
+com\docker\docker\DockerApplication.class
+com\docker\docker\controller\StudentController.class
+com\docker\docker\model\Student.class
