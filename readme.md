@@ -14,7 +14,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 ```
 #### build image 
 ```
-docker build -t springio/gs-spring-boot-docker .
+docker build -t name-of-image:version .
 ```
 
 #### check generated image
