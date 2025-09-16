@@ -4,7 +4,7 @@
 ## generate jar file
  #### target/gs-spring-boot-docker is you image name, so write your image name
 ```
-./mvnw package && java -jar target/gs-spring-boot-docker-0.1.0.jar
+./mvnw package
 ```
 #### your docker file
 ```
