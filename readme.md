@@ -5,7 +5,7 @@
 ```
 ./mvnw package
 ```
-#### your docker file
+#### your docker file (make sure the openjdk version is compatible with the java version you are using)
 ```
 FROM openjdk:8-jdk-alpine
 ARG JAR_FILE=target/your_jar_file_name.jar
