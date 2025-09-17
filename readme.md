@@ -1,7 +1,7 @@
 # Learn from this website
 >https://spring.io/guides/gs/spring-boot-docker
 # Some commands
-## generate jar file
+## generate jar file (make sure you are inside correct directory)
 ```
 ./mvnw package
 ```
